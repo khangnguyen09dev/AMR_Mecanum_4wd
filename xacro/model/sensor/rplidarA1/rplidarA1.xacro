@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:macro name="rplidarA1">
+        <link name="link_rplidarA1">
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <mesh filename="package://mecanum_description/meshes/link_rplidarA1.STL" />
+                </geometry>
+                <material name="grey">
+                    <color rgba="0.2 0.2 0.2 1.0" />
+                </material>
+            </visual>
+        </link>
+        <joint name="joint_rplidarA1" type="fixed">
+            <origin xyz="0.060113 0 0.2011" rpy="0 0 0" />
+            <parent link="base_link" />
+            <child link="link_rplidarA1" />
+        </joint>
+    </xacro:macro>
+</robot>
