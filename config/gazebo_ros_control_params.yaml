@@ -1,0 +1,18 @@
+gazebo_ros_control:   
+  pid_gains:
+    joint_left_forward:
+      p: 0.6
+      i: 0.0
+      d: 0
+    joint_right_forward:
+      p: 0.6
+      i: 0.0
+      d: 0.0
+    joint_left_back:
+      p: 0.6
+      i: 0.0
+      d: 0.0
+    joint_right_back:
+      p: 0.6
+      i: 0.0
+      d: 0.0
